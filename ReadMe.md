@@ -22,7 +22,7 @@ Here are some key points to consider:
 
 The exploration is structured around three sub-projects:
 
-## 1. **Leveraging TextAttack for Augmenting NLP Datasets **
+## 1. Leveraging TextAttack for Augmenting NLP Datasets
 
 This script (`nlp_textattack.py`) demonstrates the application of TextAttack, a library designed for adversarial attacks, augmentations, and training in NLP, to augment text data using different strategies.
 
@@ -35,7 +35,7 @@ This script (`nlp_textattack.py`) demonstrates the application of TextAttack, a 
 - **CheckListAugmenter (CKL):** An advanced strategy that applies a checklist of linguistic transformations to simulate various textual perturbations.
 - **Custom Augmenter:** A user-defined augmenter that combines `WordSwapQWERTY` and `WordSwapRandomCharacterDeletion` transformations, controlled by parameters such as `pct_words_to_swap` and `transformations_per_example`.
 
-## 2. **Evaluating NLP Models with TextAttack Augmented Data **
+## 2. Evaluating NLP Models with TextAttack Augmented Data
 
 This script (`nlp_textattack_evaluate.py`) is structured to perform a comprehensive evaluation of various machine learning models using NLP datasets augmented through TextAttack. 
 
@@ -52,7 +52,7 @@ This script (`nlp_textattack_evaluate.py`) is structured to perform a comprehens
 - **Confusion Matrix Visualization:** Provides a visual representation of the model performance, highlighting the true positives, false positives, true negatives, and false negatives, normalized to show percentages, which is crucial for understanding the model's behavior across different classes.
 - **Detailed Analysis:** Through classification reports and confusion matrices, the script offers an in-depth look at precision, recall, f1-score, and support for each class, allowing for a nuanced analysis of model performance, including areas of strength and weakness.
 
-## 3. **Exploration of NLP Text Augmentation using TextAttack **
+## 3. Exploration of NLP Text Augmentation using TextAttack
 
 This script (`nlp_textattack_explore.py`) leverages these capabilities to investigate the impact of different augmentation parameters on model accuracy.
 
