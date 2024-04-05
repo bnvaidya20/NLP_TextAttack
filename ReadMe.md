@@ -33,7 +33,7 @@ This script (`nlp_textattack.py`) demonstrates the application of TextAttack, a 
 ### Augmentation Strategies
 - **EasyDataAugmenter (EDA):** A basic augmentation strategy provided by TextAttack, which includes synonym replacement, random insertion, random swap, and random deletion.
 - **CheckListAugmenter (CKL):** An advanced strategy that applies a checklist of linguistic transformations to simulate various textual perturbations.
-- **Custom Augmenter:** A user-defined augmenter that combines `WordSwapQWERTY` and `WordSwapRandomCharacterDeletion` transformations, controlled by parameters such as `pct_words_to_swap` and `transformations_per_example`.
+- **Custom Augmenter (CA):** A user-defined augmenter that combines `WordSwapQWERTY` and `WordSwapRandomCharacterDeletion` transformations, controlled by parameters such as `pct_words_to_swap` and `transformations_per_example`.
 
 ## 2. Evaluating NLP Models with TextAttack Augmented Data
 
