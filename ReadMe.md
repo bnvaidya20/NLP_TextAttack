@@ -8,13 +8,13 @@ TextAttack offers a rich set of tools for conducting text augmentation, includin
 
 Here are some key points to consider:
 
-### Purpose and Use Cases
+### Purpose and Use Cases of TextAttack
 
 - **Adversarial Testing**: TextAttack can be used to test the robustness of NLP models by generating adversarial examples that challenge the models in controlled ways. This is similar to stress-testing models to identify and fix vulnerabilities, ultimately making them more reliable.
 - **Data Augmentation**: It offers techniques to augment text data, which can help in overcoming challenges like dataset scarcity and model overfitting, thereby improving the diversity and size of training data.
 - **Research and Development**: TextAttack facilitates research in NLP by providing a unified platform for adversarial attacks, augmentations, and training, which can lead to advancements in the field.
 
-### Ethical Considerations and Misuse
+### Ethical Considerations and Misuse of TextAttack
 - Like many tools in machine learning and cybersecurity, the potential for misuse exists depending on the intent of the user. TextAttack could be misused to craft and deploy adversarial examples against NLP systems in unethical ways, potentially leading to misinformation or exploitation of system vulnerabilities.
 - It's crucial for users to adhere to ethical guidelines and best practices, ensuring that TextAttack is used to enhance and secure systems rather than exploit them.
 
@@ -22,10 +22,9 @@ Here are some key points to consider:
 
 The exploration is structured around three sub-projects:
 
-## 1. **Leveraging TextAttack for Augmenting NLP Datasets (`nlp_textattack.py`)**
+## 1. **Leveraging TextAttack for Augmenting NLP Datasets **
 
-This script demonstrates the application of TextAttack, a library designed for adversarial attacks, augmentations, and training in NLP, to augment text data using different strategies.
-
+This script (`nlp_textattack.py`) demonstrates the application of TextAttack, a library designed for adversarial attacks, augmentations, and training in NLP, to augment text data using different strategies.
 
 ### Data Preprocessing
 - **Data Acquisition:** Utilizes `fetch_20newsgroups`, a popular text dataset for NLP tasks, selecting specific categories like computer hardware, graphics, autos, and cryptography.
@@ -36,9 +35,9 @@ This script demonstrates the application of TextAttack, a library designed for a
 - **CheckListAugmenter (CKL):** An advanced strategy that applies a checklist of linguistic transformations to simulate various textual perturbations.
 - **Custom Augmenter:** A user-defined augmenter that combines `WordSwapQWERTY` and `WordSwapRandomCharacterDeletion` transformations, controlled by parameters such as `pct_words_to_swap` and `transformations_per_example`.
 
-## 2. **Evaluating NLP Models with TextAttack Augmented Data (`nlp_textattack_evaluate.py`)**
+## 2. **Evaluating NLP Models with TextAttack Augmented Data **
 
-The script is structured to perform a comprehensive evaluation of various machine learning models using NLP datasets augmented through TextAttack. 
+This script (`nlp_textattack_evaluate.py`) is structured to perform a comprehensive evaluation of various machine learning models using NLP datasets augmented through TextAttack. 
 
 ### Data Handling and Feature Extraction
 - **Data Loading:** Pickle files are used to load augmented datasets generated through different TextAttack augmentations (EasyDataAugmenter, CheckListAugmenter, and Custom Augmentation).
@@ -53,9 +52,9 @@ The script is structured to perform a comprehensive evaluation of various machin
 - **Confusion Matrix Visualization:** Provides a visual representation of the model performance, highlighting the true positives, false positives, true negatives, and false negatives, normalized to show percentages, which is crucial for understanding the model's behavior across different classes.
 - **Detailed Analysis:** Through classification reports and confusion matrices, the script offers an in-depth look at precision, recall, f1-score, and support for each class, allowing for a nuanced analysis of model performance, including areas of strength and weakness.
 
-## 3. **Exploration of NLP Text Augmentation using TextAttack (`nlp_textattack_explore.py`)**
+## 3. **Exploration of NLP Text Augmentation using TextAttack **
 
-This script leverages these capabilities to investigate the impact of different augmentation parameters on model accuracy.
+This script (`nlp_textattack_explore.py`) leverages these capabilities to investigate the impact of different augmentation parameters on model accuracy.
 
 ### Data Preparation and Augmentation 
 - **Data Sourcing:** Utilizes the `fetch_20newsgroups` dataset, focusing on specific categories such as computer hardware, graphics, autos, and cryptography.
